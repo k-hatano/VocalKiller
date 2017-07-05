@@ -3,7 +3,7 @@
 
 int importMonoWav(MonoWAV *pcm, char *fileName) {
     FILE *fp;
-    unsigned int i;
+    unsigned long i;
 
     char riffHead[4];
     long riffLength;
@@ -147,7 +147,7 @@ void exportMonoWav(MonoWAV *pcm, char *fileName) {
 
 int importStereoWav(StereoWAV *pcm, char *fileName) {
     FILE *fp;
-    unsigned int i;
+    unsigned long i;
     char riffHead[4];
     long riffLength;
     char riffType[4];

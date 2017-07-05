@@ -6,18 +6,18 @@
 #define ERROR_FILE_NOT_FOUND 1
 
 typedef struct {
-	int channels;
-    int sampleRate;
-    int bps;
-    unsigned int length;
+	long channels;
+    long sampleRate;
+    long bps;
+    unsigned long length;
     double *data;
 } MonoWAV;
 
 typedef struct {
-	int channels;
-    int sampleRate;
-    int bps;
-    unsigned int length;
+	long channels;
+    long sampleRate;
+    long bps;
+    unsigned long length;
     double *dataLeft;
     double *dataRight;
 } StereoWAV;
